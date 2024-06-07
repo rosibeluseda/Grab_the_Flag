@@ -33,6 +33,17 @@ Communication between the server and clients is established using sockets in Jav
 ```
 
 # Login screen and rules
+
+```java
+panel = new JPanel()
+{ 
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		drawPlayers((Graphics2D) g);
+	}
+};
+```
 <p align="center">
      <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/0e1d96b2-0185-4107-9739-d42beb404204" alt="Login Screen">
 </p>
