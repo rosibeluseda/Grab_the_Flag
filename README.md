@@ -32,8 +32,9 @@ Communication between the server and clients is established using sockets in Jav
 	in = new DataInputStream(inFromServer);   				// instantiate the data input stream
 ```
 
-# Login screen and rules
+# Graphics2D and Timer
 
+The Graphics2D library is used to render the screen, and a Timer ensures it updates every frame, allowing players to see each other's movements in real-time.
 ```java
 panel = new JPanel()
 { 
@@ -43,6 +44,35 @@ panel = new JPanel()
 		drawPlayers((Graphics2D) g);
 	}
 };
+```
+
+```java
+public void drawPlayers(Graphics2D g) {  						
+g.setStroke(new BasicStroke(5)); 									
+for(Player player : players)
+{
+	int radius = 0; 
+	if(player.getStatus() == Player.PlayerStatus.ATTACKING)
+		radius = radiusAttack;
+	else
+		radius = 15;
+	int diameter = radius * 2;
+	Point currentPosition = player.getPosition();
+	int x = currentPosition.x - radius;
+	int y = currentPosition.y - radius;
+	...	     
+}//end for 
+		
+panel.repaint();
+} 
+```
+```java
+@SuppressWarnings({ "serial", "serial" })
+public void actionPerformed(ActionEvent e) {
+...
+checkRoundWinner();
+paintScreen();		
+}
 ```
 <p align="center">
      <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/0e1d96b2-0185-4107-9739-d42beb404204" alt="Login Screen">
