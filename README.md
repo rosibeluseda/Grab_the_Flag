@@ -11,25 +11,25 @@ Communication between the server and clients is established using sockets in Jav
       {
          try
          {
-            Socket server = serverSocket.accept();													// Wait for a connection from the client
-            DataInputStream in =  new DataInputStream(server.getInputStream()); 							// Get the data from the client          
-            DataOutputStream out =  new DataOutputStream(server.getOutputStream());						     // Prepare the object for returning data to the client
+            Socket server = serverSocket.accept();					// Wait for a connection from the client
+            DataInputStream in =  new DataInputStream(server.getInputStream()); 	// Get the data from the client          
+            DataOutputStream out =  new DataOutputStream(server.getOutputStream());	// Prepare the object for returning data to the client
 
-            String clientInput = String.valueOf(in.readUTF());											//Read the instruction of the client									
+            String clientInput = String.valueOf(in.readUTF());				//Read the instruction of the client									
             ....
 	
             }
-            server.close();																		// Shut down the server
+            server.close();								// Shut down the server
          
          }
       }
 ```
 ```java
- client = new Socket(serverName, port);										// instantiate the socket to connect to server
-	        OutputStream outToServer = client.getOutputStream();						// initialize the output stream
-	        out = new DataOutputStream(outToServer);									// instantiate the data output stream
-	        InputStream inFromServer = client.getInputStream(); 						// initialize the input stream
-	        in = new DataInputStream(inFromServer);   									// instantiate the data input stream
+ client = new Socket(serverName, port);							// instantiate the socket to connect to server
+	        OutputStream outToServer = client.getOutputStream();			// initialize the output stream
+	        out = new DataOutputStream(outToServer);				// instantiate the data output stream
+	        InputStream inFromServer = client.getInputStream(); 			// initialize the input stream
+	        in = new DataInputStream(inFromServer);   				// instantiate the data input stream
 ```
 
 # Login screen and rules
