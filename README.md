@@ -24,6 +24,13 @@ Communication between the server and clients is established using sockets in Jav
          }
       }
 ```
+```java
+ client = new Socket(serverName, port);										// instantiate the socket to connect to server
+	        OutputStream outToServer = client.getOutputStream();						// initialize the output stream
+	        out = new DataOutputStream(outToServer);									// instantiate the data output stream
+	        InputStream inFromServer = client.getInputStream(); 						// initialize the input stream
+	        in = new DataInputStream(inFromServer);   									// instantiate the data input stream
+```
 
 # Login screen and rules
 <p align="center">
