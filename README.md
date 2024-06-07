@@ -78,7 +78,7 @@ paintScreen();
      <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/0e1d96b2-0185-4107-9739-d42beb404204" alt="Login Screen">
 </p>
 <p align="center">
-     <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/1554f9f8-b5e6-460a-8090-9da65dab9fcb" alt="Rules">
+     <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/1554f9f8-b5e6-460a-8090-9da65dab9fcb" alt="Rules" width="600px">
 </p>
 
 
