@@ -4,6 +4,16 @@ This small game is designed for network play, allowing up to four players to con
      <img src="https://github.com/rosibeluseda/Grab_the_Flag/assets/145386489/cbc9fae2-f233-4575-8771-ed9e0615e1b7" alt="gif">
 </p>
 
+Our team members:
+- Rosibel Useda - Programmer
+- Julian Silva - Programmer
+- Valentina Arias - Programmer
+
+# My Contributions
+- Network and gameplay programming.
+- Brainstorming gameplay ideas.
+- Testing.
+  
 # Connection between the client and the server
 Communication between the server and clients is established using sockets in Java. This allows for real-time data exchange and ensures a robust and reliable connection. The server listens for incoming connections, while clients initiate the communication. Once connected, they can send and receive messages, facilitating seamless interaction.
 ```java
